@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM node:16
 RUN apk add curl
 VOLUME /tmp
 EXPOSE 8080
