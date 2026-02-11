@@ -1,5 +1,5 @@
 FROM public.ecr.aws/amazoncorretto/amazoncorretto:25-jdk
-RUN apk add curl
+# RUN apk add curl
 VOLUME /tmp
 EXPOSE 8080
 ADD target/springboot-aws-deploy-service.jar springboot-aws-deploy-service.jar
