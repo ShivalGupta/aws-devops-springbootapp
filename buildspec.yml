@@ -3,14 +3,9 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR....
-      #checking version
       - aws --version
-      #- $(aws ecr get-login --region ap-south-1 --no-include-email)
-      # update below 
-      # aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 279555700118.dkr.ecr.us-east-1.amazonaws.com
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 042787876894.dkr.ecr.us-east-1.amazonaws.com
-      - # Replace with this to your repository URI
-      - REPOSITORY_URI=042787876894.dkr.ecr.us-east-1.amazonaws.com/awsdevopscapstoneecr
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 116571328983.dkr.ecr.us-east-1.amazonaws.com
+      - REPOSITORY_URI=116571328983.dkr.ecr.us-east-1.amazonaws.com/iitk-capstone-springbootapp
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
   build:
     commands:
