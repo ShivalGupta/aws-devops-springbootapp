@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("/project")
 public class TestController {
-    @GetMapping("/data")
+    @GetMapping("/index")
     public String getData() {
-        return "First message from AWS Ecs";
+        return "This is the first page of the Spring Boot Application created for the IITK Capstone Project";
     }
 
     @GetMapping("/message")
