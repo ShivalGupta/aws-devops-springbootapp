@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/index")
     public String getData() {
-        return "This is the first page of the Spring Boot Application created for the IITK Capstone Project";
+        return "This is the first page of the Spring Boot Application created for the IITK Capstone Project. This message is updated, changes are committed to validate CICD process.";
     }
 
     @GetMapping("/message")
